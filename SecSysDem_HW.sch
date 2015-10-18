@@ -5541,9 +5541,9 @@ Final Project</text>
 <instance part="P+4" gate="1" x="210.82" y="50.8"/>
 <instance part="GND10" gate="1" x="185.42" y="55.88" rot="R270"/>
 <instance part="GND11" gate="1" x="185.42" y="43.18" rot="R270"/>
-<instance part="U$3" gate="G$1" x="101.6" y="5.08"/>
-<instance part="GND12" gate="1" x="93.98" y="15.24"/>
-<instance part="+3V4" gate="G$1" x="93.98" y="22.86"/>
+<instance part="U$3" gate="G$1" x="101.6" y="7.62"/>
+<instance part="GND12" gate="1" x="88.9" y="20.32" rot="R270"/>
+<instance part="+3V4" gate="G$1" x="93.98" y="27.94"/>
 <instance part="X4" gate="-1" x="226.06" y="127"/>
 <instance part="X4" gate="-2" x="226.06" y="124.46"/>
 <instance part="X4" gate="-3" x="226.06" y="121.92"/>
@@ -5593,7 +5593,7 @@ Final Project</text>
 <instance part="X8" gate="-2" x="167.64" y="38.1" rot="R180"/>
 <instance part="X8" gate="-1" x="167.64" y="35.56" rot="R180"/>
 <instance part="R9" gate="G$1" x="172.72" y="43.18" rot="R90"/>
-<instance part="+3V10" gate="G$1" x="160.02" y="48.26" rot="R90"/>
+<instance part="+3V10" gate="G$1" x="172.72" y="53.34"/>
 <instance part="V2" gate="G$1" x="147.32" y="93.98"/>
 <instance part="V3" gate="G$1" x="147.32" y="81.28"/>
 <instance part="V4" gate="G$1" x="147.32" y="78.74"/>
@@ -5604,9 +5604,9 @@ Final Project</text>
 <instance part="V9" gate="G$1" x="86.36" y="99.06" rot="R180"/>
 <instance part="+3V11" gate="G$1" x="218.44" y="162.56"/>
 <instance part="Q1" gate="G$1" x="71.12" y="15.24"/>
-<instance part="+3V12" gate="G$1" x="45.72" y="20.32" rot="R90"/>
+<instance part="+3V12" gate="G$1" x="53.34" y="22.86" rot="R90"/>
 <instance part="R10" gate="G$1" x="60.96" y="15.24"/>
-<instance part="R11" gate="G$1" x="63.5" y="20.32"/>
+<instance part="R11" gate="G$1" x="66.04" y="22.86"/>
 <instance part="+3V13" gate="G$1" x="12.7" y="33.02" rot="R90"/>
 </instances>
 <busses>
@@ -5674,7 +5674,7 @@ Final Project</text>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GND"/>
-<wire x1="96.52" y1="17.78" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="20.32" x2="91.44" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -5822,8 +5822,8 @@ Final Project</text>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="CLK"/>
-<wire x1="124.46" y1="7.62" x2="127" y2="7.62" width="0.1524" layer="91"/>
-<label x="127" y="7.62" size="1.27" layer="95" xref="yes"/>
+<wire x1="124.46" y1="10.16" x2="127" y2="10.16" width="0.1524" layer="91"/>
+<label x="127" y="10.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SPI_MISO" class="0">
@@ -5841,8 +5841,8 @@ Final Project</text>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="DIN"/>
-<wire x1="124.46" y1="10.16" x2="127" y2="10.16" width="0.1524" layer="91"/>
-<label x="127" y="10.16" size="1.27" layer="95" xref="yes"/>
+<wire x1="124.46" y1="12.7" x2="127" y2="12.7" width="0.1524" layer="91"/>
+<label x="127" y="12.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -5908,7 +5908,8 @@ Final Project</text>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VCC"/>
-<wire x1="96.52" y1="20.32" x2="93.98" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="22.86" x2="93.98" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="22.86" x2="93.98" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
@@ -5941,7 +5942,7 @@ Final Project</text>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
-<wire x1="162.56" y1="48.26" x2="172.72" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="50.8" x2="172.72" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
@@ -5956,7 +5957,7 @@ Final Project</text>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="+3V12" gate="G$1" pin="+3V3"/>
-<wire x1="58.42" y1="20.32" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="22.86" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="A0"/>
@@ -5968,8 +5969,8 @@ Final Project</text>
 <wire x1="25.4" y1="30.48" x2="20.32" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="33.02" x2="20.32" y2="30.48" width="0.1524" layer="91"/>
 <junction x="20.32" y="33.02"/>
+<wire x1="20.32" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
-<wire x1="15.24" y1="33.02" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PHOTORESISTOR" class="0">
@@ -6069,7 +6070,9 @@ Final Project</text>
 <segment>
 <pinref part="U$3" gate="G$1" pin="LIGHT"/>
 <pinref part="Q1" gate="G$1" pin="E"/>
-<wire x1="96.52" y1="10.16" x2="73.66" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="12.7" x2="88.9" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="12.7" x2="88.9" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="10.16" x2="73.66" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="53.34" y1="15.24" x2="53.34" y2="12.7" width="0.1524" layer="91"/>
@@ -6190,8 +6193,8 @@ Final Project</text>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="DC"/>
-<wire x1="124.46" y1="15.24" x2="127" y2="15.24" width="0.1524" layer="91"/>
-<label x="127" y="15.24" size="1.27" layer="95" xref="yes"/>
+<wire x1="124.46" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
+<label x="127" y="17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LCD_RST" class="0">
@@ -6202,8 +6205,8 @@ Final Project</text>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="RST"/>
-<wire x1="124.46" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
-<label x="127" y="20.32" size="1.27" layer="95" xref="yes"/>
+<wire x1="124.46" y1="22.86" x2="127" y2="22.86" width="0.1524" layer="91"/>
+<label x="127" y="22.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LCD_SS" class="0">
@@ -6214,8 +6217,8 @@ Final Project</text>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="CE"/>
-<wire x1="124.46" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
-<label x="127" y="17.78" size="1.27" layer="95" xref="yes"/>
+<wire x1="124.46" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
+<label x="127" y="20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DOORLOCK_SOLENOID" class="0">
@@ -6381,7 +6384,7 @@ Final Project</text>
 <segment>
 <pinref part="Q1" gate="G$1" pin="C"/>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="20.32" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="20.32" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
