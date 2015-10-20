@@ -640,28 +640,6 @@
 <wire x1="-3.35" y1="1.23" x2="-3.15" y2="1.23" width="0.2032" layer="21"/>
 <wire x1="3.35" y1="1.23" x2="3.15" y2="1.23" width="0.2032" layer="21"/>
 </package>
-<package name="SOT23-6">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; 6 lead</description>
-<wire x1="1.422" y1="-0.781" x2="-1.423" y2="-0.781" width="0.1524" layer="51"/>
-<wire x1="-1.4478" y1="-0.781" x2="-1.4478" y2="0.781" width="0.1524" layer="21"/>
-<wire x1="-1.423" y1="0.781" x2="1.422" y2="0.781" width="0.1524" layer="51"/>
-<wire x1="1.4478" y1="0.781" x2="1.4478" y2="-0.781" width="0.1524" layer="21"/>
-<circle x="-1.15" y="-0.4826" radius="0.1" width="0" layer="21"/>
-<smd name="1" x="-0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="2" x="0" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="3" x="0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="4" x="0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="5" x="0" y="1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="6" x="-0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
-<text x="-1.397" y="-2.672" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.397" y="1.702" size="1.016" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="-1.2" y1="-1.4" x2="-0.7" y2="-0.8" layer="51"/>
-<rectangle x1="-0.25" y1="-1.4" x2="0.25" y2="-0.8" layer="51"/>
-<rectangle x1="0.7" y1="-1.4" x2="1.2" y2="-0.8" layer="51"/>
-<rectangle x1="0.7" y1="0.8" x2="1.2" y2="1.4" layer="51"/>
-<rectangle x1="-0.25" y1="0.8" x2="0.25" y2="1.4" layer="51"/>
-<rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.4" layer="51"/>
-</package>
 <package name="8-SOIC">
 <wire x1="2.6" y1="2.2" x2="2.6" y2="-2.2" width="0.2032" layer="21"/>
 <wire x1="2.6" y1="-2.2" x2="-2.6" y2="-2.2" width="0.2032" layer="51"/>
@@ -975,20 +953,6 @@ IO Expander</text>
 </polygon>
 <wire x1="-3.81" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
 </symbol>
-<symbol name="MCP4706">
-<pin name="VDD" x="-5.08" y="7.62" length="middle"/>
-<pin name="VREF" x="-5.08" y="5.08" length="middle"/>
-<pin name="VSS" x="-5.08" y="2.54" length="middle"/>
-<pin name="SCL" x="25.4" y="5.08" length="middle" rot="R180"/>
-<pin name="SDA" x="25.4" y="2.54" length="middle" rot="R180"/>
-<pin name="VOUT" x="25.4" y="7.62" length="middle" rot="R180"/>
-<wire x1="0" y1="0" x2="0" y2="12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="12.7" x2="20.32" y2="12.7" width="0.254" layer="94"/>
-<wire x1="20.32" y1="12.7" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="10.16" y="10.16" size="1.778" layer="94" align="bottom-center">MCP4706 DAC</text>
-<text x="0.508" y="13.208" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
 <symbol name="FT24C512A">
 <pin name="VCC" x="-5.08" y="15.24" length="middle"/>
 <pin name="GND" x="-5.08" y="12.7" length="middle"/>
@@ -1010,6 +974,22 @@ EEPROM</text>
 <wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
 <wire x1="1.016" y1="1.016" x2="-1.016" y2="-1.016" width="0.254" layer="94"/>
 <pin name="P$1" x="-5.08" y="0" visible="off" length="middle"/>
+</symbol>
+<symbol name="MCP4901">
+<pin name="VDD" x="-5.08" y="10.16" length="middle"/>
+<pin name="VREF" x="-5.08" y="7.62" length="middle"/>
+<pin name="VSS" x="-5.08" y="5.08" length="middle"/>
+<pin name="SCK" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="SDI" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="VOUT" x="25.4" y="10.16" length="middle" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="20.32" y2="15.24" width="0.254" layer="94"/>
+<wire x1="20.32" y1="15.24" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="10.16" y="12.7" size="1.778" layer="94" align="bottom-center">MCP4901 DAC</text>
+<text x="0.508" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<pin name="!LDAC" x="-5.08" y="2.54" length="middle"/>
+<pin name="!CS" x="25.4" y="2.54" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1459,26 +1439,6 @@ EEPROM</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP4706_DAC" prefix="U">
-<gates>
-<gate name="G$1" symbol="MCP4706" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT23-6">
-<connects>
-<connect gate="G$1" pin="SCL" pad="5"/>
-<connect gate="G$1" pin="SDA" pad="4"/>
-<connect gate="G$1" pin="VDD" pad="3"/>
-<connect gate="G$1" pin="VOUT" pad="1"/>
-<connect gate="G$1" pin="VREF" pad="6"/>
-<connect gate="G$1" pin="VSS" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="FT24C512A" prefix="U">
 <gates>
 <gate name="G$1" symbol="FT24C512A" x="0" y="0"/>
@@ -1517,6 +1477,28 @@ EEPROM</text>
 <device name="VIA2" package="VIA2">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP4901" prefix="U">
+<gates>
+<gate name="G$1" symbol="MCP4901" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="-E/SN" package="8-SOIC">
+<connects>
+<connect gate="G$1" pin="!CS" pad="2"/>
+<connect gate="G$1" pin="!LDAC" pad="5"/>
+<connect gate="G$1" pin="SCK" pad="3"/>
+<connect gate="G$1" pin="SDI" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="8"/>
+<connect gate="G$1" pin="VREF" pad="6"/>
+<connect gate="G$1" pin="VSS" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6901,7 +6883,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="R6" library="Luke" deviceset="RESISTOR" device="0805" value="2.2k"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="U3" library="Luke" deviceset="MCP4706_DAC" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="T2" library="Luke" deviceset="MOSFET_NCHANNEL_ENHANCEMENT" device="2N7002,215"/>
@@ -6920,7 +6901,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="X8" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
 <part name="R9" library="Luke" deviceset="RESISTOR" device="0805" value="0R"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
-<part name="V2" library="Luke" deviceset="VIA1" device="" value="PB2"/>
 <part name="V3" library="Luke" deviceset="VIA1" device="" value="TXD"/>
 <part name="V4" library="Luke" deviceset="VIA1" device="" value="RXD"/>
 <part name="V5" library="Luke" deviceset="VIA1" device="" value="G5"/>
@@ -6941,6 +6921,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="JP5" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="JP6" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
 <part name="JP7" library="SparkFun-Connectors" deviceset="M07" device=""/>
+<part name="U5" library="Luke" deviceset="MCP4901" device="-E/SN"/>
 </parts>
 <sheets>
 <sheet>
@@ -7013,7 +6994,6 @@ Final Project</text>
 <instance part="P+7" gate="1" x="195.58" y="137.16"/>
 <instance part="R6" gate="G$1" x="213.36" y="149.86"/>
 <instance part="GND16" gate="1" x="205.74" y="149.86" rot="R270"/>
-<instance part="U3" gate="G$1" x="55.88" y="116.84"/>
 <instance part="GND17" gate="1" x="48.26" y="114.3"/>
 <instance part="+3V7" gate="G$1" x="48.26" y="129.54"/>
 <instance part="T2" gate="G$1" x="104.14" y="124.46"/>
@@ -7034,7 +7014,6 @@ Final Project</text>
 <instance part="X8" gate="-1" x="167.64" y="35.56" rot="R180"/>
 <instance part="R9" gate="G$1" x="172.72" y="43.18" rot="R90"/>
 <instance part="+3V10" gate="G$1" x="172.72" y="53.34"/>
-<instance part="V2" gate="G$1" x="147.32" y="93.98"/>
 <instance part="V3" gate="G$1" x="147.32" y="81.28"/>
 <instance part="V4" gate="G$1" x="147.32" y="78.74"/>
 <instance part="V5" gate="G$1" x="101.6" y="58.42" rot="R180"/>
@@ -7061,6 +7040,7 @@ Final Project</text>
 <instance part="JP5" gate="G$1" x="231.14" y="157.48" rot="R180"/>
 <instance part="JP6" gate="G$1" x="228.6" y="124.46" rot="R180"/>
 <instance part="JP7" gate="G$1" x="231.14" y="101.6" rot="R180"/>
+<instance part="U5" gate="G$1" x="55.88" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -7154,10 +7134,10 @@ Final Project</text>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="VSS"/>
 <wire x1="50.8" y1="119.38" x2="48.26" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="119.38" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
+<pinref part="U5" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
 <pinref part="T2" gate="G$1" pin="S"/>
@@ -7208,11 +7188,6 @@ Final Project</text>
 <wire x1="215.9" y1="73.66" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="SDA"/>
-<wire x1="81.28" y1="119.38" x2="86.36" y2="119.38" width="0.1524" layer="91"/>
-<label x="86.36" y="119.38" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U4" gate="G$1" pin="SDA"/>
 <wire x1="160.02" y1="121.92" x2="162.56" y2="121.92" width="0.1524" layer="91"/>
 <label x="162.56" y="121.92" size="1.27" layer="95" xref="yes"/>
@@ -7237,11 +7212,6 @@ Final Project</text>
 <label x="210.82" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="X1" gate="-4" pin="S"/>
 <wire x1="215.9" y1="71.12" x2="210.82" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="SCL"/>
-<wire x1="81.28" y1="121.92" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
-<label x="86.36" y="121.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="SCL"/>
@@ -7278,6 +7248,11 @@ Final Project</text>
 <wire x1="124.46" y1="10.16" x2="127" y2="10.16" width="0.1524" layer="91"/>
 <label x="127" y="10.16" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="SCK"/>
+<wire x1="81.28" y1="121.92" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
+<label x="86.36" y="121.92" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SPI_MOSI" class="0">
 <segment>
@@ -7289,6 +7264,11 @@ Final Project</text>
 <pinref part="U$3" gate="G$1" pin="DIN"/>
 <wire x1="124.46" y1="12.7" x2="127" y2="12.7" width="0.1524" layer="91"/>
 <label x="127" y="12.7" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="SDI"/>
+<wire x1="81.28" y1="119.38" x2="86.36" y2="119.38" width="0.1524" layer="91"/>
+<label x="86.36" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -7374,10 +7354,10 @@ Final Project</text>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="VDD"/>
 <wire x1="50.8" y1="124.46" x2="48.26" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="124.46" x2="48.26" y2="127" width="0.1524" layer="91"/>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
+<pinref part="U5" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="VCC"/>
@@ -7726,21 +7706,15 @@ Final Project</text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="VOUT"/>
 <wire x1="81.28" y1="124.46" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="T2" gate="G$1" pin="G"/>
+<pinref part="U5" gate="G$1" pin="VOUT"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="WP"/>
 <pinref part="V1" gate="G$1" pin="P$1"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PB2"/>
-<pinref part="V2" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -7843,6 +7817,18 @@ Final Project</text>
 <pinref part="Q1" gate="G$1" pin="E"/>
 <wire x1="96.52" y1="12.7" x2="96.52" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="10.16" x2="73.66" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="!DAC_CS" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="!CS"/>
+<wire x1="81.28" y1="116.84" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
+<label x="86.36" y="116.84" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PB2"/>
+<wire x1="142.24" y1="93.98" x2="152.4" y2="93.98" width="0.1524" layer="91"/>
+<label x="152.4" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
