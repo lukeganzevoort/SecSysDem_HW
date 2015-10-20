@@ -6994,7 +6994,7 @@ Final Project</text>
 <instance part="P+7" gate="1" x="195.58" y="137.16"/>
 <instance part="R6" gate="G$1" x="213.36" y="149.86"/>
 <instance part="GND16" gate="1" x="205.74" y="149.86" rot="R270"/>
-<instance part="GND17" gate="1" x="48.26" y="114.3"/>
+<instance part="GND17" gate="1" x="48.26" y="111.76"/>
 <instance part="+3V7" gate="G$1" x="48.26" y="129.54"/>
 <instance part="T2" gate="G$1" x="104.14" y="124.46"/>
 <instance part="GND18" gate="1" x="104.14" y="116.84"/>
@@ -7138,6 +7138,10 @@ Final Project</text>
 <wire x1="48.26" y1="119.38" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 <pinref part="U5" gate="G$1" pin="VSS"/>
+<pinref part="U5" gate="G$1" pin="!LDAC"/>
+<wire x1="48.26" y1="116.84" x2="48.26" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="116.84" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
+<junction x="48.26" y="116.84"/>
 </segment>
 <segment>
 <pinref part="T2" gate="G$1" pin="S"/>
