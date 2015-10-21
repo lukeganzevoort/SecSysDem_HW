@@ -7511,9 +7511,9 @@ Final Project</text>
 </net>
 <net name="PUSH_BUTTON" class="0">
 <segment>
-<wire x1="60.96" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
-<label x="71.12" y="48.26" size="1.27" layer="95" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="P0"/>
+<wire x1="142.24" y1="66.04" x2="152.4" y2="66.04" width="0.1524" layer="91"/>
+<label x="152.4" y="66.04" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PD6"/>
 </segment>
 <segment>
 <pinref part="S2" gate="G$1" pin="2"/>
@@ -7662,9 +7662,9 @@ Final Project</text>
 </net>
 <net name="BELL_RINGER" class="0">
 <segment>
-<wire x1="142.24" y1="66.04" x2="152.4" y2="66.04" width="0.1524" layer="91"/>
-<label x="152.4" y="66.04" size="1.27" layer="95" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="PD6"/>
+<wire x1="60.96" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
+<label x="71.12" y="48.26" size="1.27" layer="95" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="P0"/>
 </segment>
 <segment>
 <pinref part="T3" gate="G$1" pin="G"/>
@@ -7729,14 +7729,14 @@ Final Project</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="PD0"/>
 <pinref part="V3" gate="G$1" pin="P$1"/>
-<wire x1="144.78" y1="81.28" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="81.28" x2="144.78" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PD1"/>
 <pinref part="V4" gate="G$1" pin="P$1"/>
-<wire x1="144.78" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="78.74" x2="144.78" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
