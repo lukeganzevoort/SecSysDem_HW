@@ -6900,7 +6900,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="X8" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
 <part name="R9" library="Luke" deviceset="RESISTOR" device="0805" value="0R"/>
-<part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="V3" library="Luke" deviceset="VIA1" device="" value="TXD"/>
 <part name="V4" library="Luke" deviceset="VIA1" device="" value="RXD"/>
 <part name="V5" library="Luke" deviceset="VIA1" device="" value="G5"/>
@@ -6932,6 +6931,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R17" library="Luke" deviceset="RESISTOR" device="0805" value="10k"/>
 <part name="R18" library="Luke" deviceset="RESISTOR" device="0805" value="10k"/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
+<part name="P+8" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7023,7 +7023,6 @@ Final Project</text>
 <instance part="X8" gate="-2" x="167.64" y="38.1" rot="R180"/>
 <instance part="X8" gate="-1" x="167.64" y="35.56" rot="R180"/>
 <instance part="R9" gate="G$1" x="172.72" y="43.18" rot="R90"/>
-<instance part="+3V10" gate="G$1" x="172.72" y="53.34"/>
 <instance part="V3" gate="G$1" x="149.86" y="81.28"/>
 <instance part="V4" gate="G$1" x="149.86" y="78.74"/>
 <instance part="V5" gate="G$1" x="101.6" y="58.42" rot="R180"/>
@@ -7061,6 +7060,7 @@ Final Project</text>
 <instance part="R17" gate="G$1" x="76.2" y="55.88" rot="R90"/>
 <instance part="R18" gate="G$1" x="78.74" y="55.88" rot="R90"/>
 <instance part="+3V14" gate="G$1" x="58.42" y="63.5" rot="R90"/>
+<instance part="P+8" gate="1" x="172.72" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -7328,6 +7328,11 @@ Final Project</text>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <pinref part="JP4" gate="G$1" pin="3"/>
 </segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="50.8" x2="172.72" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="P+8" gate="1" pin="+5V"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -7392,11 +7397,6 @@ Final Project</text>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 <wire x1="124.46" y1="134.62" x2="124.46" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="132.08" x2="129.54" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="+3V10" gate="G$1" pin="+3V3"/>
-<wire x1="172.72" y1="50.8" x2="172.72" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
