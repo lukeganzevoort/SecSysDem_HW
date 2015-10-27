@@ -7563,9 +7563,9 @@ Final Project</text>
 </net>
 <net name="LCD_BACKLIGHT" class="0">
 <segment>
-<wire x1="142.24" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
-<label x="152.4" y="63.5" size="1.27" layer="95" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="PD7"/>
+<wire x1="142.24" y1="66.04" x2="152.4" y2="66.04" width="0.1524" layer="91"/>
+<label x="152.4" y="66.04" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PD6"/>
 </segment>
 <segment>
 <wire x1="53.34" y1="15.24" x2="53.34" y2="12.7" width="0.1524" layer="91"/>
@@ -7573,24 +7573,6 @@ Final Project</text>
 <label x="50.8" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="15.24" x2="53.34" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="PUSH_BUTTON" class="0">
-<segment>
-<wire x1="142.24" y1="66.04" x2="152.4" y2="66.04" width="0.1524" layer="91"/>
-<label x="152.4" y="66.04" size="1.27" layer="95" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="PD6"/>
-</segment>
-<segment>
-<pinref part="S2" gate="G$1" pin="2"/>
-<pinref part="C4" gate="G$1" pin="POS"/>
-<wire x1="25.4" y1="116.84" x2="25.4" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="111.76" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="116.84" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="116.84" x2="25.4" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="116.84" x2="27.94" y2="119.38" width="0.1524" layer="91"/>
-<junction x="27.94" y="116.84"/>
-<label x="27.94" y="119.38" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="KEYPAD_1" class="0">
@@ -7932,6 +7914,24 @@ Final Project</text>
 <pinref part="X1" gate="-5" pin="S"/>
 <wire x1="215.9" y1="68.58" x2="213.36" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="V10" gate="G$1" pin="P$1"/>
+</segment>
+</net>
+<net name="PUSH_BUTTON" class="0">
+<segment>
+<pinref part="S2" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="POS"/>
+<wire x1="25.4" y1="116.84" x2="25.4" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="111.76" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="116.84" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="116.84" x2="25.4" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="116.84" x2="27.94" y2="119.38" width="0.1524" layer="91"/>
+<junction x="27.94" y="116.84"/>
+<label x="27.94" y="119.38" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<wire x1="142.24" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
+<label x="152.4" y="63.5" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PD7"/>
 </segment>
 </net>
 </nets>
