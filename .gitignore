@@ -34,3 +34,8 @@ eagle.epf
 *.info
 
 *.eps
+
+
+#Folders
+/Gerbers
+*.zip
