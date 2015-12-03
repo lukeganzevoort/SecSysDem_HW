@@ -6889,7 +6889,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="R7" library="Luke" deviceset="RESISTOR" device="0805" value="10R"/>
 <part name="X7" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
-<part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="U4" library="Luke" deviceset="FT24C512A" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
@@ -6909,9 +6908,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="V9" library="Luke" deviceset="VIA1" device="" value="3v3"/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="BC547" value="2N3904"/>
-<part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
 <part name="R10" library="Luke" deviceset="RESISTOR" device="0805" value="1k"/>
-<part name="R11" library="Luke" deviceset="RESISTOR" device="0805" value="100"/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="D1" library="diode" deviceset="1N581*" device="" technology="9-T"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="F"/>
@@ -6932,6 +6929,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R18" library="Luke" deviceset="RESISTOR" device="0805" value="10k"/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="P+9" library="supply1" deviceset="+5V" device=""/>
+<part name="R11" library="Luke" deviceset="RESISTOR" device="0805" value="10k"/>
+<part name="C5" library="Luke" deviceset="CAPACITOR" device="0805" value="1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7012,10 +7013,9 @@ and 90mA at (30/255) duty cycle.</text>
 <instance part="+3V7" gate="G$1" x="48.26" y="129.54"/>
 <instance part="T2" gate="G$1" x="104.14" y="124.46"/>
 <instance part="GND18" gate="1" x="104.14" y="116.84"/>
-<instance part="R7" gate="G$1" x="104.14" y="147.32" rot="R90"/>
-<instance part="X7" gate="-2" x="99.06" y="142.24" rot="R180"/>
-<instance part="X7" gate="-1" x="99.06" y="139.7" rot="R180"/>
-<instance part="+3V8" gate="G$1" x="104.14" y="154.94"/>
+<instance part="R7" gate="G$1" x="99.06" y="144.78" rot="R180"/>
+<instance part="X7" gate="-2" x="109.22" y="144.78" rot="MR180"/>
+<instance part="X7" gate="-1" x="109.22" y="142.24" rot="MR180"/>
 <instance part="U4" gate="G$1" x="134.62" y="116.84"/>
 <instance part="+3V9" gate="G$1" x="124.46" y="137.16"/>
 <instance part="GND19" gate="1" x="116.84" y="129.54" rot="R270"/>
@@ -7036,9 +7036,7 @@ and 90mA at (30/255) duty cycle.</text>
 <instance part="V9" gate="G$1" x="86.36" y="99.06" rot="R180"/>
 <instance part="+3V11" gate="G$1" x="218.44" y="162.56"/>
 <instance part="Q1" gate="G$1" x="71.12" y="15.24"/>
-<instance part="+3V12" gate="G$1" x="53.34" y="22.86" rot="R90"/>
 <instance part="R10" gate="G$1" x="60.96" y="15.24"/>
-<instance part="R11" gate="G$1" x="66.04" y="22.86"/>
 <instance part="+3V13" gate="G$1" x="12.7" y="33.02" rot="R90"/>
 <instance part="D1" gate="G$1" x="58.42" y="86.36" rot="R90"/>
 <instance part="JP2" gate="G$1" x="223.52" y="40.64" rot="R180"/>
@@ -7065,6 +7063,10 @@ and 90mA at (30/255) duty cycle.</text>
 <instance part="R18" gate="G$1" x="78.74" y="55.88" rot="R90"/>
 <instance part="+3V14" gate="G$1" x="58.42" y="63.5" rot="R90"/>
 <instance part="P+8" gate="1" x="172.72" y="53.34"/>
+<instance part="GND3" gate="1" x="73.66" y="7.62"/>
+<instance part="P+9" gate="1" x="91.44" y="149.86"/>
+<instance part="R11" gate="G$1" x="91.44" y="134.62" rot="R90"/>
+<instance part="C5" gate="G$1" x="86.36" y="127" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -7193,6 +7195,10 @@ and 90mA at (30/255) duty cycle.</text>
 <segment>
 <pinref part="T3" gate="G$1" pin="S"/>
 <pinref part="GND21" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="E"/>
+<pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="I2C_SDA" class="0">
@@ -7337,6 +7343,15 @@ and 90mA at (30/255) duty cycle.</text>
 <wire x1="172.72" y1="50.8" x2="172.72" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
 </segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="P+9" gate="1" pin="+5V"/>
+<wire x1="93.98" y1="144.78" x2="91.44" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="144.78" x2="91.44" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="139.7" x2="91.44" y2="144.78" width="0.1524" layer="91"/>
+<junction x="91.44" y="144.78"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -7403,19 +7418,10 @@ and 90mA at (30/255) duty cycle.</text>
 <wire x1="124.46" y1="132.08" x2="129.54" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="+3V8" gate="G$1" pin="+3V3"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <wire x1="223.52" y1="157.48" x2="218.44" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="157.48" x2="218.44" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="+3V11" gate="G$1" pin="+3V3"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="R11" gate="G$1" pin="1"/>
-<pinref part="+3V12" gate="G$1" pin="+3V3"/>
-<wire x1="60.96" y1="22.86" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="A0"/>
@@ -7778,9 +7784,14 @@ and 90mA at (30/255) duty cycle.</text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<wire x1="81.28" y1="124.46" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="T2" gate="G$1" pin="G"/>
-<pinref part="U5" gate="G$1" pin="VOUT"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="127" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="124.46" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="129.54" x2="91.44" y2="127" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="POS"/>
+<wire x1="91.44" y1="127" x2="88.9" y2="127" width="0.1524" layer="91"/>
+<junction x="91.44" y="127"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -7860,7 +7871,7 @@ and 90mA at (30/255) duty cycle.</text>
 <net name="N$11" class="0">
 <segment>
 <pinref part="X7" gate="-2" pin="S"/>
-<wire x1="101.6" y1="142.24" x2="104.14" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="144.78" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -7868,8 +7879,8 @@ and 90mA at (30/255) duty cycle.</text>
 <segment>
 <pinref part="X7" gate="-1" pin="S"/>
 <pinref part="T2" gate="G$1" pin="D"/>
-<wire x1="101.6" y1="139.7" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="139.7" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="142.24" x2="104.14" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="142.24" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -7877,21 +7888,6 @@ and 90mA at (30/255) duty cycle.</text>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="Q1" gate="G$1" pin="B"/>
 <wire x1="66.04" y1="15.24" x2="68.58" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="Q1" gate="G$1" pin="C"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="20.32" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="LIGHT"/>
-<pinref part="Q1" gate="G$1" pin="E"/>
-<wire x1="96.52" y1="12.7" x2="96.52" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="10.16" x2="73.66" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!DAC_CS" class="0">
@@ -7936,6 +7932,22 @@ and 90mA at (30/255) duty cycle.</text>
 <wire x1="142.24" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
 <label x="152.4" y="63.5" size="1.27" layer="95" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="PD7"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="LIGHT"/>
+<wire x1="96.52" y1="12.7" x2="88.9" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="12.7" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="C"/>
+<wire x1="81.28" y1="20.32" x2="73.66" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="VOUT"/>
+<pinref part="C5" gate="G$1" pin="NEG"/>
+<wire x1="81.28" y1="127" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
