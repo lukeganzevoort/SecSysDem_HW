@@ -6947,6 +6947,10 @@ Final Project</text>
 <text x="152.4" y="78.74" size="1.778" layer="94" align="center-left">USART</text>
 <text x="152.4" y="81.28" size="1.778" layer="94" align="center-left">USART</text>
 <text x="144.78" y="88.9" size="1.778" layer="94" align="center-left">MISO</text>
+<text x="129.54" y="68.58" size="0.8128" layer="97" rot="R180" align="center-left">OC0B</text>
+<text x="129.54" y="66.04" size="0.8128" layer="97" rot="R180" align="center-left">OC0A</text>
+<text x="48.26" y="81.28" size="0.8128" layer="97" rot="R180" align="center-left">Doorlock draws 550mA at (255/255) 100% duty cycle 
+and 90mA at (30/255) duty cycle.</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="111.76" y="55.88"/>
